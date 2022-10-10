@@ -7,6 +7,8 @@ This project was made by  [Hasibul Hasan](https://github.com/cbHasib) with [Reac
 ## **`Feature List`**
 
 In the project directory, you will find these feature:
+**1. Have Dark Mode** \
+
 
 <!-- ### `Future 1` -->
 
@@ -22,7 +24,7 @@ In the project directory, you will find these feature:
 
 ## **`Credits`**
 
-### Quiz Hunt acknowledge the hard work and contribution of the following third party libraries and framework. <br>  We used and take inspiration from the following third party libraries/framework.
+Quiz Hunt acknowledge the hard work and contribution of the following third party libraries and framework. <br>  We used and take inspiration from the following third party libraries/framework.
 
 **1. [TailwindCSS](https://tailwindcss.com/) - CSS Framework** \
 **2. [daisyUI](https://daisyui.com/) - Tailwind CSS plugin**
