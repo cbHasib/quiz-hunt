@@ -42,7 +42,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="relative lg:w-1/2 ">
+        <div className="relative lg:w-1/2">
           <div className="w-full lg:w-4/5 lg:ml-auto h-full">
             <Lottie animationData={quizAnim} loop={true} className="w-full" />
           </div>

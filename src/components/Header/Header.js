@@ -23,8 +23,8 @@ const Header = () => {
   }, [dark]);
 
   return (
-    <header className="shadow-lg bg-base-200 text-base-content">
-      <nav className="z-10 w-full sticky">
+    <header className="shadow-lg bg-base-200 text-base-content sticky top-0 z-10">
+      <nav className="w-full sticky">
         <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
           <div className="flex flex-wrap items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative">
             <input
