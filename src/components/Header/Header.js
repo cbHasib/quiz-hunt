@@ -41,7 +41,7 @@ const Header = () => {
                 className="flex space-x-2 items-center"
               >
                 <div aria-hidden="true" className="flex space-x-1">
-                  <img src="logo512.png" alt="" className="h-8 w-8" />
+                  <img src="/logo512.png" alt="" className="h-8 w-8" />
                 </div>
                 <span className="text-2xl font-bold">
                   Quiz<span className="text-primary">Hunt</span>
@@ -94,14 +94,14 @@ const Header = () => {
                   </li>
                   <li className="">
                     <NavLink
-                      to={"/topics"}
+                      to={"/quiz"}
                       className={({ isActive }) =>
                         isActive
                           ? "block md:px-4 transition text-primary"
                           : "block md:px-4 transition hover:text-primary"
                       }
                     >
-                      <span className="">Topics</span>
+                      <span className="">Quiz</span>
                     </NavLink>
                   </li>
                   <li className="">

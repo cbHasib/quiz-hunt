@@ -32,7 +32,7 @@ const ErrorPage = () => {
         </div>
       </div>
       <div>
-        <img src="https://i.ibb.co/ck1SGFJ/Group.png" alt="No Network" />
+        <img src="https://i.ibb.co/ck1SGFJ/Group.png" alt="NoNetwork" />
       </div>
     </div>
   );

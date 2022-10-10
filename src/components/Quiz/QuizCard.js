@@ -1,20 +1,32 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const QuizCard = () => {
+const QuizCard = ({ quiz }) => {
+  const navigate = useNavigate();
+  const quizHandler = (id) => {
+    navigate(`/quiz/${id}`);
+    console.log(id);
+  };
+  const { id, name, logo, total } = quiz;
   return (
-    <div className="card card-compact w-full bg-base-100 shadow-md border border-base-300">
+    <div className="card card-compact w-full bg-base-100 shadow-md border border-base-300 max-w-xs">
       <figure>
         <img
-          src="https://placeimg.com/400/225/arch"
+          src={logo}
           alt="Shoes"
-          className="w-full"
+          className="w-full h-full shadow-md object-cover"
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title justify-center">HTML</h2>
+        <h2 className="card-title justify-center">{name}</h2>
         <div className="card-actions justify-between items-center">
-          <p>Total Quiz: 6</p>
-          <button className="btn btn-primary btn-sm">
+          <p className="font-medium">
+            Total Quiz: <span className="text-primary">{total}</span>
+          </p>
+          <button
+            onClick={() => quizHandler(id)}
+            className="btn btn-primary btn-sm"
+          >
             Start Practice
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -28,4 +28,5 @@ Quiz Hunt acknowledge the hard work and contribution of the following third part
 **2. [daisyUI](https://daisyui.com/) - Tailwind CSS plugin** \
 **3. [React Router](https://reactrouter.com/) - Client side routing** \
 **4. [LottieFiles](https://lottiefiles.com/) - Lottie Animation File** \
-**5. [ReCharts](https://recharts.org/) - ReCharts For Graphical Illustration**
+**5. [ReCharts](https://recharts.org/) - ReCharts For Graphical Illustration** \
+**6. [React Toastify](https://fkhadra.github.io/react-toastify/) - ReactTostify for Showing Toast to the user** \

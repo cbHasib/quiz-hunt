@@ -28,17 +28,17 @@ const Hero = () => {
           </div>
           <div className="flex flex-col items-center md:flex-row gap-3">
             <Link
-              href="/home"
+              to="/about"
               className="btn btn-primary w-full md:w-[50%] lg:w-auto"
             >
-              <span>Visit Store</span>
+              <span>About Us</span>
             </Link>
             <Link
-              href="/about"
+              to="/blog"
               aria-label=""
               className="btn btn-primary btn-outline w-full md:w-[50%] lg:w-auto"
             >
-              Learn More
+              Read Blog
             </Link>
           </div>
         </div>
