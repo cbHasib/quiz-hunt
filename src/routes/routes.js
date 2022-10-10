@@ -10,8 +10,12 @@ export const routes = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
+        index: true,
+        element: <Home></Home>,
+      },
+      {
         path: "home",
-        element: <Home></Home> ,
+        element: <Home></Home>,
       },
     ],
   },
