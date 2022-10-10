@@ -4,8 +4,6 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
 
 const Statistics = () => {
   const data = useLoaderData();
-  console.log(data.data);
-
   return (
     <div className="max-w-xl mx-auto py-10">
       <BarChart width={500} height={400} data={data.data}>
