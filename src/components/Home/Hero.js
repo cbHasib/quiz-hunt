@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import quizAnim from "../../assets/quiz1.json";
+import quizAnim from "../../assets/quiz.json";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
