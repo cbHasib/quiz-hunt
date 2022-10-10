@@ -6,8 +6,9 @@ This project was made by  [Hasibul Hasan](https://github.com/cbHasib) with [Reac
 
 ## **`Feature List`**
 
-In the project directory, you will find these feature:
-**1. Have Dark Mode** \
+In the project directory, you will find these feature: \
+<span style="color:#570DF8">**1. Have Dark Mode** </span>
+
 
 
 <!-- ### `Future 1` -->
