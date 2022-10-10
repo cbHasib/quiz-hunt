@@ -27,5 +27,6 @@ In the project directory, you will find these feature:
 Quiz Hunt acknowledge the hard work and contribution of the following third party libraries and framework. <br>  We used and take inspiration from the following third party libraries/framework.
 
 **1. [TailwindCSS](https://tailwindcss.com/) - CSS Framework** \
-**2. [daisyUI](https://daisyui.com/) - Tailwind CSS plugin**
+**2. [daisyUI](https://daisyui.com/) - Tailwind CSS plugin** \
+**3. [React Router](https://reactrouter.com/) - Client side routing** \
 
