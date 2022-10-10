@@ -1,17 +1,6 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
-import { PureComponent } from "react";
-import {
-  BarChart,
-  Bar,
-  Cell,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from "recharts";
+import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
 
 const Statistics = () => {
   const data = useLoaderData();
@@ -22,7 +11,7 @@ const Statistics = () => {
       <BarChart width={500} height={400} data={data.data}>
         <Bar dataKey="total" fill="#570DF8" />
         <XAxis dataKey="name" />
-        <YAxis/>
+        <YAxis />
         <Tooltip />
         <Legend />
       </BarChart>
