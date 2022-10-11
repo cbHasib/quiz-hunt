@@ -1,32 +1,32 @@
 [{
     "id": "f1a15e80-d9b1-404f-ac2a-dcf5b158de55",
-    "title": "Bonny",
-    "slug": "Amelita",
-    "postBody": "Veltman",
-    "postCategory": "ReactJS",
-    "author": "Hasibul Hasan",
-    "readTime": 1,
-    "image": "http://dummyimage.com/189x100.png/ff4444/ffffff",
-    "publishDate": "11-Oct-2022"
-  }, {
-    "id": "2b607ebb-edc5-4496-a0fc-6ec4bb1927ca",
-    "title": "Norman",
-    "slug": "Pernell",
-    "postBody": "Bediss",
-    "postCategory": "ReactJS",
-    "author": "Hasibul Hasan",
-    "readTime": 3,
-    "image": "http://dummyimage.com/111x100.png/dddddd/000000",
-    "publishDate": "11-Oct-2022"
-  }, {
-    "id": "1ea02a7a-83a8-4567-8085-c6e4f8e1eccb",
-    "title": "Ede",
-    "slug": "Dionis",
-    "postBody": "Hagland",
+    "title": "What is the purpose of React Router?",
+    "slug": "what-is-the-purpose-of-react-router",
+    "postBody": "Those who need a client-side router, need it for state management. Say you have server-rendered pages, but with some client-side widgets - e.g. a calendar, set of filters or collapsed or open sidebar. Router helps you initialize these components of the page in the exact state you want them. Granted, you could do most of it and all of the use cases I've named on the server, too. But it's usually a lot easier to handle these on the client. You might render it faster on the server, but sometimes, especially when doing partial page updates, it's cheaper and faster to handle that client-side.",
     "postCategory": "React Router",
     "author": "Hasibul Hasan",
     "readTime": 1,
-    "image": "http://dummyimage.com/135x100.png/5fa2dd/ffffff",
+    "image": "https://reactrouter.com/ogimage.png",
+    "publishDate": "11-Oct-2022"
+  }, {
+    "id": "2b607ebb-edc5-4496-a0fc-6ec4bb1927ca",
+    "title": "How React Context API Works?",
+    "slug": "how-react-context-api-works",
+    "postBody": "Context is designed to share data that can be considered “global” for a tree of React Components. It sits next to React to props and state. In other words, Context provides a way to pass data through the component tree without having to pass props down manually at every level. In a short word I can say that, React Context provides a way to pass data through the component tree without having to pass props down manually at every level. In some sense, it simulates “Global” data in React component Tree.",
+    "postCategory": "React Hook",
+    "author": "Hasibul Hasan",
+    "readTime": 3,
+    "image": "https://www.loginradius.com/blog/static/157af7ff069ab273224b4718433d9790/03979/title-image.png",
+    "publishDate": "11-Oct-2022"
+  }, {
+    "id": "1ea02a7a-83a8-4567-8085-c6e4f8e1eccb",
+    "title": "What is React useRef() and How does it works?",
+    "slug": "react-useref-and-how-does-it-works",
+    "postBody": "The useRef hook may not be as popular as other hooks such as useState, useEffect and useReducer. Due to this, it may not be clear what is the purpose of this hook. Nonetheless, useRef hook can be very useful in certain situations. The ref, in useRef, is a shorthand for “reference”. What this hook does is it allows you to store data, and persist them across renders. What's even more interesting and important, this hook does this without causing the component to re-render. This means that when you update the value stored by useRef, React will not re-render your component. The most common use case for the useRef hook is to store references to DOM nodes and React components. This then allows you to access these nodes directly and work with them as you need. This is similar to using JavaScript querySelector() method to find DOM node and storing the node in a variable.",
+    "postCategory": "React Hook",
+    "author": "Hasibul Hasan",
+    "readTime": 3,
+    "image": "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qnwi8ehe64zysba5y195.png",
     "publishDate": "11-Oct-2022"
   }, {
     "id": "9b5d8077-abf7-40ce-a43c-810431d117ec",
