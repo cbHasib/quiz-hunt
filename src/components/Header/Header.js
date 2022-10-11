@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [dark, setDark] = useState(false);
@@ -21,6 +21,10 @@ const Header = () => {
       ? document.querySelector("html").setAttribute("data-theme", "dark")
       : document.querySelector("html").removeAttribute("data-theme");
   }, [dark]);
+
+  const navHandler = () => {
+    document.getElementById("toggle_nav").checked = false;
+  };
 
   return (
     <header className="shadow-lg bg-base-200 text-base-content sticky top-0 z-10">
@@ -83,6 +87,7 @@ const Header = () => {
                   <li className="">
                     <NavLink
                       to={"/home"}
+                      onClick={navHandler}
                       className={({ isActive }) =>
                         isActive
                           ? "block md:px-4 transition text-primary"
@@ -94,6 +99,7 @@ const Header = () => {
                   </li>
                   <li className="">
                     <NavLink
+                      onClick={navHandler}
                       to={"/quiz"}
                       className={({ isActive }) =>
                         isActive
@@ -106,6 +112,7 @@ const Header = () => {
                   </li>
                   <li className="">
                     <NavLink
+                      onClick={navHandler}
                       to={"/statistics"}
                       className={({ isActive }) =>
                         isActive
@@ -118,6 +125,7 @@ const Header = () => {
                   </li>
                   <li className="">
                     <NavLink
+                      onClick={navHandler}
                       to={"/blog"}
                       className={({ isActive }) =>
                         isActive
@@ -130,6 +138,7 @@ const Header = () => {
                   </li>
                   <li className="">
                     <NavLink
+                      onClick={navHandler}
                       to={"/about"}
                       className={({ isActive }) =>
                         isActive
