@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="py-4 px-[5%] bg-base-300">
         <div className="grid justify-center lg:justify-between">
           <div className="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6">
-            <span>©2022 All rights reserved</span>
+            <span>© 2022 All rights reserved by <strong>QuizHunt</strong></span>
           </div>
           <div className="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
             <a
