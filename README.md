@@ -7,9 +7,14 @@ This project was made by [Hasibul Hasan](https://github.com/cbHasib) with [React
 ## **`Feature List`**
 
 In the project directory, you will find these feature: \
-<span style="color:#570DF8">**1. Have Dark Mode** </span>
+<span style="color:#00C49F">**0. Fully Responsive** </span> \
+<span style="color:#00C49F">**1. Dark Mode** </span> \
+<span style="color:#00C49F">**2. Practice Quiz** </span> \
+<span style="color:#00C49F">**3. Quiz Answer Analysis Data** </span> \
+<span style="color:#00C49F">**4. Can show and hide correct answer** </span> \
+<span style="color:#00C49F">**5. Wrong & Correct Answer Toast** </span> \
+<span style="color:#00C49F">**6. Blog** </span> \
 
-<!-- ### `Future 1` -->
 
 <br>
 
