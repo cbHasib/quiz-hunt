@@ -14,7 +14,7 @@ In the project directory, you will find these feature: \
 <span style="color:#00C49F">**4. Can show and hide correct answer** </span> \
 <span style="color:#00C49F">**5. Wrong & Correct Answer Toast** </span> \
 <span style="color:#00C49F">**6. Blog** </span> \
-
+<span style="color:#00C49F">**7. Single Blog Page** </span>
 
 <br>
 
@@ -34,4 +34,4 @@ Quiz Hunt acknowledge the hard work and contribution of the following third part
 **3. [React Router](https://reactrouter.com/) - Client side routing** \
 **4. [LottieFiles](https://lottiefiles.com/) - Lottie Animation File** \
 **5. [ReCharts](https://recharts.org/) - ReCharts For Graphical Illustration** \
-**6. [React Toastify](https://fkhadra.github.io/react-toastify/) - ReactTostify for Showing Toast to the user** \
+**6. [React Toastify](https://fkhadra.github.io/react-toastify/) - ReactTostify for Showing Toast to the user**
