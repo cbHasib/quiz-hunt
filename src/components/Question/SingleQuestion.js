@@ -3,12 +3,10 @@ import { toast } from "react-toastify";
 import AnswerOption from "./AnswerOption";
 import "./SingleQuestion.css";
 
-const SingleQuestion = ({ singleQuestion, serial }) => {
+const SingleQuestion = ({ singleQuestion, serial, setCorrectCount, setWrongCount, wrongCount, correctCount }) => {
   const { correctAnswer, options, question, id } = singleQuestion;
   const [selectAnswer, setSelectAnswer] = useState("");
   const [viewAnswer, setViewAnswer] = useState("");
-  const [correctCount, setCorrectCount] = useState(0);
-  const [wrongCount, setWrongCount] = useState(0);
 
   const showAnswer = (correctAnswers) => {
     const toggleView = document.getElementById(`${id}`);
@@ -102,7 +100,6 @@ const SingleQuestion = ({ singleQuestion, serial }) => {
           </div>
         </section>
       </div>
-      
     </div>
   );
 };
