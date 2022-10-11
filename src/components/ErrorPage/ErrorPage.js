@@ -11,6 +11,7 @@ const ErrorPage = () => {
 
   useEffect(() => {
     document.title = "Page Not Found - QuizHunt";
+    window.scrollTo(0, 0);
   }, []);
 
   return (

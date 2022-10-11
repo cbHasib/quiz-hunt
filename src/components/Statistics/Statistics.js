@@ -6,6 +6,7 @@ const Statistics = () => {
   const data = useLoaderData();
   useEffect(() => {
     document.title = "Statistics - QuizHunt";
+    window.scrollTo(0, 0);
   }, []);
   return (
     <div className="max-w-xl mx-auto py-10">

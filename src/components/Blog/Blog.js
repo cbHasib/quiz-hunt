@@ -6,6 +6,7 @@ const Blog = () => {
 
   useEffect(() => {
     document.title = "Blog - QuizHunt";
+    window.scrollTo(0, 0);
 
     fetch("blog.json")
       .then((res) => res.json())

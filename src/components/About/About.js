@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 const About = () => {
   useEffect(() => {
     document.title = "About Us - QuizHunt";
+    window.scrollTo(0, 0);
   }, []);
   return (
     <div className="p-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-14">

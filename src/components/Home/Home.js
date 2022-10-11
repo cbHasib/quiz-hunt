@@ -5,6 +5,7 @@ import Hero from "./Hero";
 const Home = () => {
   useEffect(() => {
     document.title = "QuizHunt - Gain Extra Knowledge with QuizHunt";
+    window.scrollTo(0, 0);
   }, []);
   return (
     <div>

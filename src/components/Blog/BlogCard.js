@@ -12,7 +12,7 @@ const BlogCard = ({ blog }) => {
   return (
     <div className="card card-compact w-full bg-base-100 shadow border border-base-300">
       <figure>
-        <img className="w-full h-48 object-cover" src={image} alt={question} />
+        <img className="w-full h-40 md:h-60 object-cover" src={image} alt={question} />
       </figure>
       <div className="card-body justify-between">
         <h2 className="card-title justify-center">{question}</h2>
