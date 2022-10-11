@@ -3,7 +3,14 @@ import { toast } from "react-toastify";
 import AnswerOption from "./AnswerOption";
 import "./SingleQuestion.css";
 
-const SingleQuestion = ({ singleQuestion, serial, setCorrectCount, setWrongCount, wrongCount, correctCount }) => {
+const SingleQuestion = ({
+  singleQuestion,
+  serial,
+  setCorrectCount,
+  setWrongCount,
+  wrongCount,
+  correctCount,
+}) => {
   const { correctAnswer, options, question, id } = singleQuestion;
   const [selectAnswer, setSelectAnswer] = useState("");
   const [viewAnswer, setViewAnswer] = useState("");
@@ -34,10 +41,12 @@ const SingleQuestion = ({ singleQuestion, serial, setCorrectCount, setWrongCount
       <div className="quiz_box w-full bg-base-200 text-base-content shadow-md h-full">
         <section className="flex h-full flex-col">
           <div className="relative">
-            <div className="que_text flex gap-2 mr-8">
-              <span className="font-semibold text-lg">{serial + 1}.</span>
+            <div className="que_text gap-2 mr-8">
+              <span className="font-semibold text-lg">{`Quiz ${
+                serial + 1
+              }. `}</span>
               <span
-                className="font-semibold text-lg"
+                className="font-semibold text-lg questionP"
                 dangerouslySetInnerHTML={{ __html: question }}
               ></span>
             </div>

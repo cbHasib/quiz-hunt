@@ -1,3 +1,7 @@
+.questionP p {
+    display: inline;
+}
+
 .quiz_box {
     border-radius: 15px;
     transition: all 0.3s ease;
