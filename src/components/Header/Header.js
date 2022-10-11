@@ -128,6 +128,18 @@ const Header = () => {
                       <span className="">Blog</span>
                     </NavLink>
                   </li>
+                  <li className="">
+                    <NavLink
+                      to={"/about"}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "block md:px-4 transition text-primary"
+                          : "block md:px-4 transition hover:text-primary"
+                      }
+                    >
+                      <span className="">About</span>
+                    </NavLink>
+                  </li>
                 </ul>
               </div>
 
