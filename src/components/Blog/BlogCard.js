@@ -9,7 +9,7 @@ const BlogCard = ({ blog }) => {
     navigate(`/blog/post/${slug}`);
   };
 
-  const { slug, image, question } = blog;
+  const { title, slug, postBody, postCategory, author, image, publishDate } = blog;
   return (
     <div
       onClick={() => handleBlog(slug)}
@@ -19,19 +19,20 @@ const BlogCard = ({ blog }) => {
         <img
           className="h-[300px] w-full object-cover"
           src={`${image}`}
-          alt={question}
+          alt={title}
         />
       </figure>
-      <div className="badge badge-secondary absolute top-5 left-5 bg-opacity-75 p-4">
-        categoryName
+      <div className="badge badge-primary absolute top-5 left-5 bg-opacity-75 p-4">
+        {postCategory}
       </div>
 
       <div className="card-body">
-        <h2 className="card-title">{question}</h2>
+        <h2 className="card-title">{title}</h2>
+        <p className="text-left">{postBody.slice(0, 50) + "..."}</p>
         <hr className="bg-gray-400 w-full h-[1px]" />
         <div className="flex justify-between items-center">
-          <span className="m-0 p-0 text-base">Hasibul Hasan</span>
-          <span className="m-0 p-0 text-base">Oct 11, 2022</span>
+          <span className="m-0 p-0 text-base">{author}</span>
+          <span className="m-0 p-0 text-base">{publishDate}</span>
         </div>
         <div className="card-actions justify-end"></div>
       </div>

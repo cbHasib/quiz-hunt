@@ -25,6 +25,7 @@ export const routes = createBrowserRouter([
       },
       {
         path: "/blog",
+        loader: async () => fetch("/blog.json"),
         element: <Blog></Blog>,
       },
       {

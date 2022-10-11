@@ -1,16 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import { useLoaderData } from "react-router-dom";
 import BlogCard from "./BlogCard";
 
 const Blog = () => {
-  const [blogData, setBlogData] = useState([]);
+  const blogData = useLoaderData();
+  console.log(blogData);
 
   useEffect(() => {
     document.title = "Blog - QuizHunt";
     window.scrollTo(0, 0);
-
-    fetch("blog.json")
-      .then((res) => res.json())
-      .then((data) => setBlogData(data));
   }, []);
 
   return (
