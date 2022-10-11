@@ -4,7 +4,6 @@ import BlogCard from "./BlogCard";
 
 const Blog = () => {
   const blogData = useLoaderData();
-  console.log(blogData);
 
   useEffect(() => {
     document.title = "Blog - QuizHunt";
