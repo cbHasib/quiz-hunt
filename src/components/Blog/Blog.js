@@ -5,6 +5,8 @@ const Blog = () => {
   const [blogData, setBlogData] = useState([]);
 
   useEffect(() => {
+    document.title = "Blog - QuizHunt";
+
     fetch("blog.json")
       .then((res) => res.json())
       .then((data) => setBlogData(data));
