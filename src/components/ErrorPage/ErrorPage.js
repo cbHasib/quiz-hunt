@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
-import { useNavigate, useRouteError } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import errorImg from "../../images/404.png";
 
 const ErrorPage = () => {
-  const error = useRouteError();
   const navigate = useNavigate();
   const backHome = () => {
     navigate("/");
@@ -27,7 +26,6 @@ const ErrorPage = () => {
                 Sorry about that! Please visit our hompage to get where you need
                 to go.
               </p>
-              {error && <p>{error.message || error.status}</p>}
               <button
                 onClick={backHome}
                 className="sm:w-full lg:w-auto my-2 border rounded md py-4 px-8 text-center bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50"
