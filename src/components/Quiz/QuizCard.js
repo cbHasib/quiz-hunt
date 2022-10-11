@@ -9,12 +9,12 @@ const QuizCard = ({ quiz }) => {
   };
   const { id, name, logo, total } = quiz;
   return (
-    <div className="card card-compact w-full bg-base-100 shadow-md border border-base-300 max-w-xs">
+    <div className="card card-compact w-full bg-base-100 shadow-md border border-base-300 max-w-xs overflow-hidden">
       <figure>
         <img
           src={logo}
           alt="Shoes"
-          className="w-full h-full shadow-md object-cover"
+          className="w-full h-full shadow-md object-cover bg-neutral rounded-2xl"
         />
       </figure>
       <div className="card-body">
