@@ -42,9 +42,9 @@ const About = () => {
             at <strong>University of Rajshahi</strong>.
             <br />
             My most favorite quotation is:{" "}
-            <blockquote className="text-primary font-bold">
+            <span className="text-spanrimary font-bold">
               "If you can dream it, you can do it. - Walt Disney"
-            </blockquote>
+            </span>
           </p>
         </div>
         <div className="sideBar">
