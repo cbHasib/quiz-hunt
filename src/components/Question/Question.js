@@ -11,8 +11,14 @@ const Question = () => {
         Quiz For <span className="text-primary">{name}</span>
       </h1>
 
-      <div className="py-10">
-        <SingleQuestion singleQuestion={questions[0]}></SingleQuestion>
+      <div className="py-20 grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {questions.map((question, idx) => (
+          <SingleQuestion
+            singleQuestion={question}
+            key={question.id}
+            serial={idx}
+          ></SingleQuestion>
+        ))}
       </div>
     </div>
   );
