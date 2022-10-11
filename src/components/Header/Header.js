@@ -84,7 +84,7 @@ const Header = () => {
             >
               <div className="lg:pr-4 lg:w-auto w-full lg:pt-0">
                 <ul className="tracking-wide font-medium lg:text-sm flex-col flex lg:flex-row gap-6 lg:gap-0">
-                  <li className="">
+                  <li>
                     <NavLink
                       to={"/home"}
                       onClick={navHandler}
@@ -94,10 +94,10 @@ const Header = () => {
                           : "block md:px-4 transition hover:text-primary"
                       }
                     >
-                      <span className="">Home</span>
+                      <span>Home</span>
                     </NavLink>
                   </li>
-                  <li className="">
+                  <li>
                     <NavLink
                       onClick={navHandler}
                       to={"/quiz"}
@@ -107,10 +107,10 @@ const Header = () => {
                           : "block md:px-4 transition hover:text-primary"
                       }
                     >
-                      <span className="">Quiz</span>
+                      <span>Quiz</span>
                     </NavLink>
                   </li>
-                  <li className="">
+                  <li>
                     <NavLink
                       onClick={navHandler}
                       to={"/statistics"}
@@ -120,10 +120,10 @@ const Header = () => {
                           : "block md:px-4 transition hover:text-primary"
                       }
                     >
-                      <span className="">Statistics</span>
+                      <span>Statistics</span>
                     </NavLink>
                   </li>
-                  <li className="">
+                  <li>
                     <NavLink
                       onClick={navHandler}
                       to={"/blog"}
@@ -133,10 +133,10 @@ const Header = () => {
                           : "block md:px-4 transition hover:text-primary"
                       }
                     >
-                      <span className="">Blog</span>
+                      <span>Blog</span>
                     </NavLink>
                   </li>
-                  <li className="">
+                  <li>
                     <NavLink
                       onClick={navHandler}
                       to={"/about"}
@@ -146,7 +146,20 @@ const Header = () => {
                           : "block md:px-4 transition hover:text-primary"
                       }
                     >
-                      <span className="">About</span>
+                      <span>About</span>
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      onClick={navHandler}
+                      to={"/contact"}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "block md:px-4 transition text-primary"
+                          : "block md:px-4 transition hover:text-primary"
+                      }
+                    >
+                      <span>Contact</span>
                     </NavLink>
                   </li>
                 </ul>
