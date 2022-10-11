@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
+import { toast } from "react-toastify";
 import { Cell, Legend, Pie, PieChart, Tooltip } from "recharts";
 import SingleQuestion from "./SingleQuestion";
 
@@ -17,6 +18,7 @@ const Question = () => {
   const resetCount = () => {
     setCorrectCount(0);
     setWrongCount(0);
+    toast.success("Successfully Reset All Data", {theme: "dark"});
   };
 
   const data = [

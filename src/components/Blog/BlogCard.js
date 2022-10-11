@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "./BlogCard.css";
 
 const BlogCard = ({ blog }) => {
   const navigate = useNavigate();
@@ -10,21 +11,29 @@ const BlogCard = ({ blog }) => {
 
   const { slug, image, question } = blog;
   return (
-    <div className="card card-compact w-full bg-base-100 shadow border border-base-300">
-      <figure>
-        <img className="w-full h-40 md:h-60 object-cover" src={image} alt={question} />
+    <div
+      onClick={() => handleBlog(slug)}
+      className="card card-compact w-full bg-base-100 shadow-lg overflow-hidden border blogCard cursor-pointer"
+    >
+      <figure className="relative thumb-blogCard overflow-hidden">
+        <img
+          className="h-[300px] w-full object-cover"
+          src={`${image}`}
+          alt={question}
+        />
       </figure>
-      <div className="card-body justify-between">
-        <h2 className="card-title justify-center">{question}</h2>
-        <div className="card-actions justify-end">
-          <label
-            onClick={() => handleBlog(slug)}
-            htmlFor="my-modal-3"
-            className="btn btn-primary w-full"
-          >
-            Get Answer
-          </label>
+      <div className="badge badge-secondary absolute top-5 left-5 bg-opacity-75 p-4">
+        categoryName
+      </div>
+
+      <div className="card-body">
+        <h2 className="card-title">{question}</h2>
+        <hr className="bg-gray-400 w-full h-[1px]" />
+        <div className="flex justify-between items-center">
+          <span className="m-0 p-0 text-base">Hasibul Hasan</span>
+          <span className="m-0 p-0 text-base">Oct 11, 2022</span>
         </div>
+        <div className="card-actions justify-end"></div>
       </div>
     </div>
   );
