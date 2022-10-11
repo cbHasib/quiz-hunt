@@ -5,7 +5,6 @@ const QuizCard = ({ quiz }) => {
   const navigate = useNavigate();
   const quizHandler = (id) => {
     navigate(`/quiz/${id}`);
-    console.log(id);
   };
   const { id, name, logo, total } = quiz;
   return (
