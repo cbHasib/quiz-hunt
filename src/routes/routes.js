@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import About from "../components/About/About";
 import Blog from "../components/Blog/Blog";
+import SingleBlog from "../components/Blog/SingleBlog";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import Home from "../components/Home/Home";
 import Question from "../components/Question/Question";
@@ -25,6 +26,16 @@ export const routes = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog></Blog>,
+      },
+      {
+        path: "/blog/post/:postSlug",
+        loader: async ({ params }) => {
+          return fetch("/blog.json")
+            .then((res) => res.json())
+            .then((data) => data.find((blog) => blog.slug === params.postSlug))
+            .catch((error) => console.log(error));
+        },
+        element: <SingleBlog></SingleBlog>,
       },
       {
         path: "/statistics",

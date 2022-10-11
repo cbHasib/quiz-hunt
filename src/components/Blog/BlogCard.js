@@ -1,11 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const BlogCard = ({blog}) => {
+const BlogCard = ({ blog }) => {
+  const navigate = useNavigate();
+
   const handleBlog = (slug) => {
-    console.log(slug);
+    navigate(`/blog/post/${slug}`);
   };
 
-  const { id, image, question } = blog;
+  const { slug, image, question } = blog;
   return (
     <div className="card card-compact w-full bg-base-100 shadow border border-base-300">
       <figure>
@@ -15,7 +18,7 @@ const BlogCard = ({blog}) => {
         <h2 className="card-title justify-center">{question}</h2>
         <div className="card-actions justify-end">
           <label
-            onClick={() => handleBlog(id)}
+            onClick={() => handleBlog(slug)}
             htmlFor="my-modal-3"
             className="btn btn-primary w-full"
           >
