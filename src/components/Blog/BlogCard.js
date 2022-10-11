@@ -14,7 +14,7 @@ const BlogCard = ({ blog }) => {
   return (
     <div
       onClick={() => handleBlog(slug)}
-      className="card card-compact w-full bg-base-100 shadow-lg overflow-hidden border blogCard cursor-pointer"
+      className="card card-compact w-full bg-base-100 shadow-lg overflow-hidden border border-base-300 blogCard cursor-pointer"
     >
       <figure className="relative thumb-blogCard overflow-hidden">
         <img
