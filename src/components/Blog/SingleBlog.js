@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 
 const SingleBlog = () => {
   const blog = useLoaderData();
-  const { title, postBody, author, readTime, image, publishDate, slug } = blog;
+  const { title, postBody, author, readTime, image, publishDate } = blog;
   useEffect(() => {
     document.title = `${title} - QuizHunt`;
     window.scrollTo(0, 0);
