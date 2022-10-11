@@ -15,14 +15,10 @@ export const routes = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: async () =>
-          fetch("https://openapi.programming-hero.com/api/quiz"),
         element: <Home></Home>,
       },
       {
         path: "/home",
-        loader: async () =>
-          fetch("https://openapi.programming-hero.com/api/quiz"),
         element: <Home></Home>,
       },
       {
@@ -37,8 +33,6 @@ export const routes = createBrowserRouter([
       },
       {
         path: "/quiz",
-        loader: async () =>
-          fetch("https://openapi.programming-hero.com/api/quiz"),
         element: <Quiz></Quiz>,
       },
       {

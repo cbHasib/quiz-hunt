@@ -1,15 +1,16 @@
-import React from "react";
-import { useLoaderData } from "react-router-dom";
+import React, { useEffect } from "react";
 import Quiz from "../Quiz/Quiz";
 import Hero from "./Hero";
 
 const Home = () => {
-  const loadData = useLoaderData();
+  useEffect(() => {
+    document.title = "QuizHunt - Gain Extra Knowledge with QuizHunt";
+  }, []);
   return (
     <div>
       <Hero></Hero>
       <div className="bg-base-200" id="quiz">
-        <Quiz quizData={loadData.data}></Quiz>
+        <Quiz></Quiz>
       </div>
     </div>
   );

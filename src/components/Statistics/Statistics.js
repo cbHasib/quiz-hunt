@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
 
 const Statistics = () => {
   const data = useLoaderData();
+  useEffect(() => {
+    document.title = "Statistics - QuizHunt";
+  }, []);
   return (
     <div className="max-w-xl mx-auto py-10">
       <BarChart width={500} height={400} data={data.data}>
