@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import { Cell, Legend, Pie, PieChart, Tooltip } from "recharts";
 import SingleQuestion from "./SingleQuestion";
@@ -8,6 +8,11 @@ const Question = () => {
   const { name, questions } = questionsData.data;
   const [correctCount, setCorrectCount] = useState(0);
   const [wrongCount, setWrongCount] = useState(0);
+
+  useEffect(() => {
+    document.title = `Quiz For ${name} - QuizHunt`;
+    window.scrollTo(0, 0);
+  }, [name]);
 
   const resetCount = () => {
     setCorrectCount(0);
@@ -53,7 +58,9 @@ const Question = () => {
         <h1 className="text-4xl font-bold">
           Quiz For <span className="text-primary">{name}</span>
         </h1>
-        <p className="mt-2 text-lg font-medium text-accent">Test your {name} skill by taking this quiz.</p>
+        <p className="mt-2 text-lg font-medium text-accent">
+          Test your {name} skill by taking this quiz.
+        </p>
       </div>
 
       <div className="grid grid-cols-3 lg:grid-cols-4 gap-5 py-20">

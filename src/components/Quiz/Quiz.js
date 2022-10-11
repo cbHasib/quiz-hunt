@@ -5,7 +5,6 @@ const Quiz = () => {
   const [quizData, setQuizData] = useState([]);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
     document.title = "Quiz - QuizHunt";
     fetch("https://openapi.programming-hero.com/api/quiz")
       .then((res) => res.json())
