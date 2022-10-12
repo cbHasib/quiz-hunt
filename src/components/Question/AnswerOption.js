@@ -1,6 +1,11 @@
 import React from "react";
 
-const AnswerOption = ({ answerHandler, option, viewAnswer, selectAnswer }) => {
+const AnswerOption = ({
+  answerHandler,
+  option,
+  viewAnswer,
+  selectAnswer,
+}) => {
   let viewClass = "";
   if (viewAnswer === option) {
     viewClass = "correct";
@@ -12,7 +17,7 @@ const AnswerOption = ({ answerHandler, option, viewAnswer, selectAnswer }) => {
       onClick={() => answerHandler(option)}
       className={`option ${selectAnswer === option && "correct disabledOpt"} ${
         selectAnswer === option + "wrong" && "incorrect disabledOpt"
-      } ${viewClass}`}
+      }  ${viewClass}`}
     >
       <span>{option}</span>
     </div>

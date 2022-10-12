@@ -18,7 +18,7 @@ const Question = () => {
   const resetCount = () => {
     setCorrectCount(0);
     setWrongCount(0);
-    toast.success("Successfully Reset All Data", {theme: "dark"});
+    toast.success("Successfully Reset All Data", { theme: "dark" });
   };
 
   const data = [

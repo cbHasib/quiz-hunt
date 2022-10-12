@@ -13,6 +13,7 @@ const SingleQuestion = ({
 }) => {
   const { correctAnswer, options, question, id } = singleQuestion;
   const [selectAnswer, setSelectAnswer] = useState("");
+  const [otherAnswer, setOtherAnswer] = useState("");
   const [viewAnswer, setViewAnswer] = useState("");
 
   const showAnswer = (correctAnswers) => {
@@ -28,10 +29,12 @@ const SingleQuestion = ({
     if (option === correctAnswer) {
       toast.success("Congratulations! Your answer is correct!");
       setSelectAnswer(option);
+      setOtherAnswer("other");
       setCorrectCount(correctCount + 1);
     } else {
       toast.error("Sorry, You entered a wrong answer!");
       setSelectAnswer(option + "wrong");
+      setOtherAnswer("other");
       setWrongCount(wrongCount + 1);
     }
   };
@@ -96,7 +99,9 @@ const SingleQuestion = ({
               </label>
             </div>
           </div>
-          <div className="option_list">
+          <div
+            className={`option_list ${otherAnswer === "other" && "offClick"}`}
+          >
             {options.map((option, idx) => (
               <AnswerOption
                 answerHandler={answerHandler}
