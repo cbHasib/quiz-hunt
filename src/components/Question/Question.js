@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLoaderData } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import { toast } from "react-toastify";
 import { Cell, Legend, Pie, PieChart, Tooltip } from "recharts";
 import SingleQuestion from "./SingleQuestion";
@@ -16,9 +16,10 @@ const Question = () => {
   }, [name]);
 
   const resetCount = () => {
-    setCorrectCount(0);
-    setWrongCount(0);
-    toast.success("Successfully Reset All Data", { theme: "dark" });
+    toast.success("Resetting All Data", { theme: "dark" });
+    setTimeout(() => {
+      window.location.reload();
+    }, 1000);
   };
 
   const data = [
@@ -116,9 +117,9 @@ const Question = () => {
               <Legend />
             </PieChart>
             <h3 className="text-xl text-center">No Tricks, Just Practice.</h3>
-            <Link onClick={resetCount} className="btn btn-warning w-[80%]">
+            <button onClick={resetCount} className="btn btn-warning w-[80%]">
               Reset All
-            </Link>
+            </button>
           </div>
         </div>
       </div>
