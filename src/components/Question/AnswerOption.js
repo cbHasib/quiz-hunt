@@ -10,8 +10,8 @@ const AnswerOption = ({ answerHandler, option, viewAnswer, selectAnswer }) => {
   return (
     <div
       onClick={() => answerHandler(option)}
-      className={`option ${selectAnswer === option && "correct"} ${
-        selectAnswer === option + "wrong" && "incorrect"
+      className={`option ${selectAnswer === option && "correct disabledOpt"} ${
+        selectAnswer === option + "wrong" && "incorrect disabledOpt"
       } ${viewClass}`}
     >
       <span>{option}</span>
