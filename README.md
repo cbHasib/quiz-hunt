@@ -20,7 +20,7 @@ In the project directory, you will find these feature: \
 
 ## **`Useful Links`**
 
-**1. [Github Repository](https://github.com/programming-hero-web-course2/b6-quiz-crackerz-cbHasib)** \
+**1. [Github Repository](https://github.com/cbHasib/quiz-hunt)** \
 **2. [Live Website](https://quizhunt.netlify.app/)**
 
 <br>
